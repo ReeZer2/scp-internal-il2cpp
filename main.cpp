@@ -6,7 +6,7 @@
 
 void OnGUI(PEXCEPTION_POINTERS ExceptionInfo) {
 
-	il2cpp::draw_text(Rect{ 5, 30, 100.0f, 100.0f }, "<color=red>il2cpp plague : v0.9</color>");
+	il2cpp::draw_text(Rect{ 5, 30, 100.0f, 100.0f }, "<color=red>totorowldox scpsl hack : v0.9</color>\n<color=red>thx for chrysls</color>");
 
 	camera = il2cpp::get_current_camera();
 	if (!camera) return;
@@ -32,7 +32,7 @@ void OnGUI(PEXCEPTION_POINTERS ExceptionInfo) {
 		if (WorldToScreen(matrix, entityList[i].position, out, screenCenterX, screenCenterY)) {
 
 			float dist = GetDistance(cameraPosition, entityList[i].position);
-			auto color = "white";
+			auto color = TeamColor[entityList[i].team];
 
 			sprintf(buf, "<color=%s>%s - %.2f</color>", color, TeamName[entityList[i].team], dist);
 			il2cpp::draw_text(Rect{ out.X, out.Y, 100.0f, 100.0f }, buf);
@@ -122,7 +122,6 @@ BOOL WINAPI DllMain(HINSTANCE hinstDll, DWORD fdwReason, LPVOID lpvReserved) {
 
 		auto base = il2cpp::GetModuleBase();
 		il2cpp::Init();
-
 		// hooking with VEH example
 		AddVectoredExceptionHandler(1, CorruptionHandler);
 		VEH.Append(base + offset::PlayerStats_Update, &PlayerStats_Update);
