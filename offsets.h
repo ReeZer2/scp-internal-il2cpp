@@ -3,9 +3,9 @@
 
 namespace offset {
 	// il2cpp
-	constexpr pointer create_text = 0x103C640;
-	constexpr pointer draw_text = 0x1050FA0;
-	constexpr pointer none_style = 0x104A810;
+	constexpr pointer create_text = 0x123D850;
+	constexpr pointer draw_text   = 0x12521B0;
+	constexpr pointer none_style  = 0x124BA20;
 
 	// camera
 	constexpr pointer camera = 0x10;
@@ -18,14 +18,14 @@ namespace offset {
 	constexpr pointer unity_list_offset = 0x8;
 
 	// PlayerStats
-	constexpr pointer PlayerStats_Update = 0x316840;
+	constexpr pointer PlayerStats_Update = 0x33CEC0;
 	constexpr pointer PlayerStats_ccm = 0x70;
 	constexpr pointer ccm_team = 0x170;
 
 	// render
-	constexpr pointer GUI = 0x50F6E0;
+	constexpr pointer GUI = 0x5785A0;
 
 	//AC bypass
-	constexpr pointer MemoryIntegrity = 0x285FFB;
-	constexpr pointer MemoryIntegrity2 = 0x285FFB + 0x1B;
+	constexpr pointer MemoryIntegrity = 0x6F205;
+	constexpr pointer MemoryIntegrity2 = 0x6F205 + 0x1B;
 }
