@@ -24,8 +24,4 @@ namespace offset {
 
 	// render
 	constexpr pointer GUI = 0x5785A0;
-
-	//AC bypass
-	constexpr pointer MemoryIntegrity = 0x6F205;
-	constexpr pointer MemoryIntegrity2 = 0x6F205 + 0x1B;
 }
